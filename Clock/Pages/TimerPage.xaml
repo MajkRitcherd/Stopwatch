@@ -1,0 +1,29 @@
+﻿<Page x:Class="Clock.Pages.TimerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Clock.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TimerPage">
+
+    <Grid>
+        <TextBlock x:Name="hoursTextBlock" TextAlignment="Center" HorizontalAlignment="Left" Margin="50,70,0,0" FontSize="30" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Background="#43ACAC" Width="60"/>
+        <Button x:Name="hour1" Content="^" Click="hourUp" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <Button x:Name="hour2" Content="˅" Click="hourDown" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" FontSize="20" FontWeight="ExtraBold" Margin="110,74,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Height="40" Width="20"/>
+
+        <TextBlock x:Name="minutesTextBlock" TextAlignment="Center" HorizontalAlignment="Left" Margin="130,70,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" FontSize="30" Background="#43ACAC" Width="60"/>
+        <Button x:Name="minute1" Content="^" Click="minuteUp" HorizontalAlignment="Left" Margin="130,30,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <Button x:Name="minute2" Content="˅" Click="minuteDown" HorizontalAlignment="Left" Margin="130,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" FontSize="20" FontWeight="ExtraBold" Margin="190,74,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Width="20" Height="40"/>
+        
+        <TextBlock x:Name="secondsTextBlock" TextAlignment="Center" HorizontalAlignment="Left" Margin="210,70,0,0" TextWrapping="Wrap" Text="00" FontSize="30" VerticalAlignment="Top" Background="#43ACAC" Width="60"/>
+        <Button x:Name="second1" Content="^" Click="secondUp" HorizontalAlignment="Left" Margin="210,30,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <Button x:Name="second2" Content="˅" Click="secondDown" HorizontalAlignment="Left" Margin="210,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="ExtraBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <Button Content="Start" Click="startTimer" HorizontalAlignment="Left" Margin="210,175,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="SemiBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+        <Button Content="Reset" Click="resetTimer" HorizontalAlignment="Left" Margin="145,175,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="SemiBold" BorderThickness="2" BorderBrush="Black" Background="#399494" Width="60"/>
+
+    </Grid>
+</Page>
